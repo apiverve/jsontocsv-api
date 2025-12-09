@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/jsontocsv",
+  "version": "1.1.12",
+  "description": "JSON to CSV Converter is a powerful tool for converting JSON arrays into CSV format. It supports custom delimiters, header inclusion, and proper escaping of special characters.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/jsontocsv-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "json", "csv", "json to csv", "csv converter", "data conversion"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/jsontocsv-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/jsontocsv?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}

@@ -1,0 +1,108 @@
+openapi: 3.0.4
+info:
+  title: JSON to CSV Converter
+  description: JSON to CSV Converter is a powerful tool for converting JSON arrays into CSV format. It supports custom delimiters, header inclusion, and proper escaping of special characters.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/jsontocsv:
+    post:
+      summary: Convert JSON to CSV
+      description: JSON to CSV Converter is a powerful tool for converting JSON arrays into CSV format. It supports custom delimiters, header inclusion, and proper escaping of special characters.
+      operationId: jsontocsv
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  row_count: 2
+                  column_count: 3
+                  columns:
+                  - name
+                  - age
+                  - city
+                  csv: >-
+                    name,age,city
+
+                    John Doe,30,New York
+
+                    Jane Smith,25,Los Angeles
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                json:
+                  type: array
+                  description: The JSON array to convert to CSV (must be array of objects)
+                  example:
+                  - name: John Doe
+                    age: 30
+                    city: New York
+                  - name: Jane Smith
+                    age: 25
+                    city: Los Angeles
+                delimiter:
+                  type: string
+                  description: 'The delimiter to use in the CSV (default: comma)'
+                  default: ','
+                  example: ','
+                include_header:
+                  type: boolean
+                  description: 'Whether to include column headers in the output (default: true)'
+                  default: true
+                  example: true
+              required:
+              - json
+              example:
+                json:
+                - name: John Doe
+                  age: 30
+                  city: New York
+                - name: Jane Smith
+                  age: 25
+                  city: Los Angeles
+                delimiter: ','
+                include_header: true
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []

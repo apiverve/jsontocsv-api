@@ -9,35 +9,15 @@ const API_KEY = process.env.APIVERVE_API_KEY || 'YOUR_API_KEY_HERE';
 const API_URL = 'https://api.apiverve.com/v1/jsontocsv';
 
 /**
- * Make a POST request to the JSON to CSV Converter API
+ * Make a GET request to the JSON to CSV Converter API
  */
 async function callJSONtoCSVConverterAPI() {
   try {
-    // Request body
-    const requestBody &#x3D; {
-    &quot;json&quot;: [
-        {
-            &quot;name&quot;: &quot;John Doe&quot;,
-            &quot;age&quot;: 30,
-            &quot;city&quot;: &quot;New York&quot;
-        },
-        {
-            &quot;name&quot;: &quot;Jane Smith&quot;,
-            &quot;age&quot;: 25,
-            &quot;city&quot;: &quot;Los Angeles&quot;
-        }
-    ],
-    &quot;delimiter&quot;: &quot;,&quot;,
-    &quot;include_header&quot;: true
-};
-
     const response = await fetch(API_URL, {
-      method: 'POST',
+      method: 'GET',
       headers: {
-        'x-api-key': API_KEY,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(requestBody)
+        'x-api-key': API_KEY
+      }
     });
 
     // Check if response is successful

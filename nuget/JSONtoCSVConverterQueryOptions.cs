@@ -12,21 +12,18 @@ namespace APIVerve.API.JSONtoCSVConverter
     {
         /// <summary>
         /// The JSON array to convert to CSV (must be array of objects)
-        /// Example: [{"name":"John","age":30},{"name":"Jane","age":25}]
         /// </summary>
         [JsonProperty("json")]
         public string Json { get; set; }
 
         /// <summary>
-        /// The delimiter to use in the CSV (default: comma)
-        /// Example: ,
+        /// The delimiter to use in the CSV
         /// </summary>
         [JsonProperty("delimiter")]
         public string Delimiter { get; set; }
 
         /// <summary>
         /// Whether to include column headers in the output (default: true)
-        /// Example: true
         /// </summary>
         [JsonProperty("include_header")]
         public string Include_header { get; set; }

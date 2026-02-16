@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:jsontocsv-api:1.1.13'
+    implementation 'com.github.apiverve:jsontocsv-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ JSONtoCSVConverterAPIClient client = new JSONtoCSVConverterAPIClient("YOUR_API_K
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("json", new ArrayList<>());
+    parameters.put("json", Arrays.asList([object Object], [object Object]));
     parameters.put("delimiter", ",");
     parameters.put("include_header", true);
 

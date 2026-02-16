@@ -44,7 +44,11 @@ from apiverve_jsontocsvconverter.apiClient import JsontocsvAPIClient
 # Initialize the client with your APIVerve API key
 api = JsontocsvAPIClient("[YOUR_API_KEY]")
 
-query = { "json": [ { "name": "John Doe", "age": 30, "city": "New York" }, { "name": "Jane Smith", "age": 25, "city": "Los Angeles" } ], "delimiter": ",", "include_header": true }
+query = {
+    "json": [{"name":"John Doe","age":30,"city":"New York"},{"name":"Jane Smith","age":25,"city":"Los Angeles"}],
+    "delimiter": ",",
+    "include_header": true
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "json": [ { "name": "John Doe", "age": 30, "city": "New York" }, { "name": "Jane Smith", "age": 25, "city": "Los Angeles" } ], "delimiter": ",", "include_header": true }
+query = {
+    "json": [{"name":"John Doe","age":30,"city":"New York"},{"name":"Jane Smith","age":25,"city":"Los Angeles"}],
+    "delimiter": ",",
+    "include_header": true
+}
 ```
 
 ###### Simple Request
@@ -127,7 +135,11 @@ from apiverve_jsontocsvconverter.apiClient import JsontocsvAPIClient, JsontocsvA
 
 api = JsontocsvAPIClient("[YOUR_API_KEY]")
 
-query = { "json": [ { "name": "John Doe", "age": 30, "city": "New York" }, { "name": "Jane Smith", "age": 25, "city": "Los Angeles" } ], "delimiter": ",", "include_header": true }
+query = {
+    "json": [{"name":"John Doe","age":30,"city":"New York"},{"name":"Jane Smith","age":25,"city":"Los Angeles"}],
+    "delimiter": ",",
+    "include_header": true
+}
 
 try:
     result = api.execute(query)
@@ -148,7 +160,11 @@ from apiverve_jsontocsvconverter.apiClient import JsontocsvAPIClient, JsontocsvA
 
 api = JsontocsvAPIClient("[YOUR_API_KEY]")
 
-query = { "json": [ { "name": "John Doe", "age": 30, "city": "New York" }, { "name": "Jane Smith", "age": 25, "city": "Los Angeles" } ], "delimiter": ",", "include_header": true }
+query = {
+    "json": [{"name":"John Doe","age":30,"city":"New York"},{"name":"Jane Smith","age":25,"city":"Los Angeles"}],
+    "delimiter": ",",
+    "include_header": true
+}
 
 try:
     result = api.execute(query)
@@ -182,7 +198,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_jsontocsvconverter.apiClient import JsontocsvAPIClient, JsontocsvAPIClientError
 
-query = { "json": [ { "name": "John Doe", "age": 30, "city": "New York" }, { "name": "Jane Smith", "age": 25, "city": "Los Angeles" } ], "delimiter": ",", "include_header": true }
+query = {
+    "json": [{"name":"John Doe","age":30,"city":"New York"},{"name":"Jane Smith","age":25,"city":"Los Angeles"}],
+    "delimiter": ",",
+    "include_header": true
+}
 
 # Using context manager ensures proper cleanup
 with JsontocsvAPIClient("[YOUR_API_KEY]") as api:
@@ -208,7 +228,11 @@ from apiverve_jsontocsvconverter.apiClient import JsontocsvAPIClient
 # Enable debug mode
 api = JsontocsvAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "json": [ { "name": "John Doe", "age": 30, "city": "New York" }, { "name": "Jane Smith", "age": 25, "city": "Los Angeles" } ], "delimiter": ",", "include_header": true }
+query = {
+    "json": [{"name":"John Doe","age":30,"city":"New York"},{"name":"Jane Smith","age":25,"city":"Los Angeles"}],
+    "delimiter": ",",
+    "include_header": true
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -223,8 +247,13 @@ from apiverve_jsontocsvconverter.apiClient import JsontocsvAPIClient
 
 api = JsontocsvAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "json": [{"name":"John Doe","age":30,"city":"New York"},{"name":"Jane Smith","age":25,"city":"Los Angeles"}],
+    "delimiter": ",",
+    "include_header": true
+}
+
 try:
-    query = { "json": [ { "name": "John Doe", "age": 30, "city": "New York" }, { "name": "Jane Smith", "age": 25, "city": "Los Angeles" } ], "delimiter": ",", "include_header": true }
     result = api.execute(query)
     print(result)
 finally:

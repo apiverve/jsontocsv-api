@@ -14,7 +14,7 @@ namespace APIVerve.API.JSONtoCSVConverter
         /// The JSON array to convert to CSV (must be array of objects)
         /// </summary>
         [JsonProperty("json")]
-        public string Json { get; set; }
+        public List<string> Json { get; set; }
 
         /// <summary>
         /// The delimiter to use in the CSV
@@ -26,6 +26,6 @@ namespace APIVerve.API.JSONtoCSVConverter
         /// Whether to include column headers in the output (default: true)
         /// </summary>
         [JsonProperty("include_header")]
-        public string Include_header { get; set; }
+        public bool? Include_header { get; set; }
     }
 }

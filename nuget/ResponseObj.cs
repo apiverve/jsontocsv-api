@@ -25,20 +25,35 @@ namespace APIVerve.API.JSONtoCSVConverter
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("row_count")]
-        public long RowCount { get; set; }
+        public long? RowCount { get; set; }
 
         [JsonProperty("column_count")]
-        public long ColumnCount { get; set; }
+        public long? ColumnCount { get; set; }
 
         [JsonProperty("columns")]
         public string[] Columns { get; set; }
 
         [JsonProperty("csv")]
         public string Csv { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }

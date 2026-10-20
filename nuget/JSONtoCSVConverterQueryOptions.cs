@@ -14,7 +14,7 @@ namespace APIVerve.API.JSONtoCSVConverter
         /// The JSON array to convert to CSV (must be array of objects)
         /// </summary>
         [JsonProperty("json")]
-        public List<string> Json { get; set; }
+        public object Json { get; set; }
 
         /// <summary>
         /// The delimiter to use in the CSV

@@ -2,9 +2,9 @@ openapi: 3.0.4
 info:
   title: JSON to CSV Converter
   description: >-
-    JSON to CSV Converter is a powerful tool for converting JSON arrays into CSV
-    format. It supports custom delimiters, header inclusion, and proper escaping
-    of special characters.
+    JSON to CSV Converter converts an array of JSON objects into structured CSV
+    text. It outputs formatted CSV content, detected column headers, and row
+    counts, with support for custom delimiters like commas, tabs, or pipes.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/jsontocsv:
     post:
-      summary: Convert JSON to CSV
+      summary: JSON to CSV Converter
       description: Convert JSON array data to CSV format
       operationId: jsontocsv
       parameters: []

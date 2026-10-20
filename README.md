@@ -1,13 +1,13 @@
-# [JSON to CSV Converter API](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [JSON to CSV Converter API](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-JSON to CSV Converter is a powerful tool for converting JSON arrays into CSV format. It supports custom delimiters, header inclusion, and proper escaping of special characters.
+JSON to CSV Converter converts an array of JSON objects into structured CSV text. It outputs formatted CSV content, detected column headers, and row counts, with support for custom delimiters like commas, tabs, or pipes.
 
 The JSON to CSV Converter API provides a simple, reliable way to integrate json to csv converter functionality into your applications. Built for developers who need production-ready json to csv converter capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -193,7 +193,7 @@ go get github.com/apiverve/jsontocsv-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [JSON to CSV Converter API](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [JSON to CSV Converter API](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/jsontocsv](https://docs.apiverve.com/ref/jsontocsv)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -259,7 +259,7 @@ A real response from the JSON to CSV Converter API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [JSON to CSV Converter API](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [JSON to CSV Converter API](https://apiverve.com/marketplace/jsontocsv?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

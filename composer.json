@@ -1,7 +1,7 @@
 {
     "name": "apiverve/jsontocsv",
-    "description": "JSON to CSV Converter is a powerful tool for converting JSON arrays into CSV format. It supports custom delimiters, header inclusion, and proper escaping of special characters.",
-    "version": "1.2.0",
+    "description": "JSON to CSV Converter converts an array of JSON objects into structured CSV text. It outputs formatted CSV content, detected column headers, and row counts, with support for custom delimiters like commas, tabs, or pipes.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "jsontocsv",
-        "json",
-        "csv",
         "json to csv",
-        "csv converter",
-        "data conversion"
+        "json to csv converter",
+        "json to csv api",
+        "convert json into csv",
+        "transform json to csv"
     ],
-    "homepage": "https://apiverve.com/marketplace/jsontocsv?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/jsontocsv?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/jsontocsv",

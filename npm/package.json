@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/jsontocsv",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "JSON to CSV Converter converts an array of JSON objects into structured CSV text. It outputs formatted CSV content, detected column headers, and row counts, with support for custom delimiters like commas, tabs, or pipes.",
   "main": "index.js",
   "types": "index.d.ts",
